@@ -1,39 +1,108 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Recording Studio Booking
 
-Welcome,
+## Table of contents
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+- [Recording Studio Booking](#recording-studio-booking)
+  - [Table of contents](#table-of-contents)
+  - [Introduction](#introduction)
+    - [Site Goals](#site-goals)
+    - [Target Audience](#target-audience)
+    - [User Stories](#user-stories)
+    - [Existing Features](#existing-features)
+      - [?](#)
+        - [?](#-1)
+  - [Structure](#structure)
+    - [Logical Flow](#logical-flow)
+    - [Features Left to Implement](#features-left-to-implement)
+    - [Database design](#database-design)
+  - [Technologies](#technologies)
+  - [Testing](#testing)
+    - [Functional Testing](#functional-testing)
+    - [Pep8 Validation](#pep8-validation)
+    - [Bugs and Fixes](#bugs-and-fixes)
+  - [Deployment](#deployment)
+    - [Version Control](#version-control)
+    - [Heroku Deployment](#heroku-deployment)
+  - [Credits](#credits)
+    - [Code](#code)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+## Introduction
 
-## Codeanywhere Reminders
+?
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Site Goals
 
-`python3 -m http.server`
+- ?
+- ?
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Target Audience
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- ?
 
-`http_server`
+### User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- As a user, I would like to
+- As a user, I would like to
+- As a user, I want to
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Existing Features
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### ?
 
-To log into the Heroku toolbelt CLI:
+-
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+-
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+##### ?
 
----
+## Structure
 
-Happy coding!
+### Logical Flow
+
+- I have created a flowchart of the structure for this program. Following flow is how the program works right now. See section of [Features left to Implement](#features-left-to-implement) for the expected final version.
+
+![flowchart_current]()
+
+### Features Left to Implement
+
+- This is a flowchart of the expected final version.
+
+![flowchart_expected]()
+
+- Features to implement:
+
+### Database design
+
+## Technologies
+
+## Testing
+
+### Functional Testing
+
+### Pep8 Validation
+
+- Python syntax checker at [Extends class](https://extendsclass.com/python-tester.html) was used to check the code. No error was found.
+
+### Bugs and Fixes
+
+## Deployment
+
+### Version Control
+
+The site was created using the CodeAnywhere editor and pushed to github to the remote repository "??".
+
+The following git commands were used throughout development to push code to the remote repo:
+
+```git add .``` - This command was used to add the file(s) to the staging area before they are committed.
+```git commit -m "commit message"``` - This command was used to commit changes to the local repository queue ready for the final step.
+```git push``` - This command was used to push all committed code to the remote repository on github.
+
+### Heroku Deployment
+
+The below steps were followed to deploy this project to Heroku:
+
+## Credits
+
+### Code
+
+- I used Code Institutes walkthrough project as tutorial for setting everything up and get the connection to my Worksheet, and also for steps to deploy my program to Heroku.
