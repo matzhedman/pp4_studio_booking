@@ -28,7 +28,8 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEVELOPMENT = os.environ.get("DEVELOPMENT")
+DEBUG = DEVELOPMENT
 
 ALLOWED_HOSTS = ['8000-matzhedman-pp4-studio-bo-jqh4r956i8.us2.codeanyapp.com',
                  'studio-booking-se.herokuapp.com', 'localhost']
@@ -45,6 +46,8 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+
+    'booking',
 
 ]
 
