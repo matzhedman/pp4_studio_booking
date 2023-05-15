@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Record
 from .forms import RecordForm
 
+
 # Create your views here.
 
 
