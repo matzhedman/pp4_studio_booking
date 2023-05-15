@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to QNB Recording Studio</h1>
+    <table>
+        {% for record in records %}
+        <tr>
+            <td>{{ record.name }}</td>
+            <td>{{ record.phone }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/add">Book a day</a>
+
+    <form method="POST" action="{% url 'create' %}">
+        {% csrf_token %}
+        <div>
+            <p>
+                <label for="id_name">Name:</label>
+                <input type="text" id="id_name" name="item_name" />
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="id_phone">Phone:</label>
+                <input type="text" id="id_phone" name="item_phone" />
+            </p>
+        </div>
+        <div>
+            <p>
+                <button type="submit">Book!</button>
+            </p>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
