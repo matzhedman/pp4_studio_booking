@@ -13,34 +13,27 @@
     <table>
         {% for record in records %}
         <tr>
-            <td>{{ record.name }}</td>
-            <td>{{ record.phone }}</td>
+            {% if record.phone %}
+            <td><strike>{{ record.name }}</strike></td>
+            {% else %}
+            <td><strike>{{ record.phone }}</strike></td>
+            {% endif %}
         </tr>
         {% endfor %}
     </table>
 
-    <a href="/add">Book a day</a>
+
 
     <form method="POST" action="{% url 'create' %}">
         {% csrf_token %}
-        <div>
-            <p>
-                <label for="id_name">Name:</label>
-                <input type="text" id="id_name" name="item_name" />
-            </p>
-        </div>
-        <div>
-            <p>
-                <label for="id_phone">Phone:</label>
-                <input type="text" id="id_phone" name="item_phone" />
-            </p>
-        </div>
+        {{ form.as_p }}
         <div>
             <p>
                 <button type="submit">Book!</button>
             </p>
         </div>
     </form>
+
 
 
 </body>

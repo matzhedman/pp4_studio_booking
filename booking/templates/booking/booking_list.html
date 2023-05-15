@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
 
@@ -13,12 +13,27 @@
     <table>
         {% for record in records %}
         <tr>
-            <td>{{ record.name }}</td>
-            <td>{{ record.phone }}</td>
+            {% if record.phone %}
+            <td><strike>{{ record.name }}</strike></td>
+            {% else %}
+            <td><strike>{{ record.phone }}</strike></td>
+            {% endif %}
+            <td>
+                <a href="/edit/{{ item.id }}">
+                    <button>Edit</button>
+                </a>
+            </td>
         </tr>
         {% endfor %}
     </table>
-
+    <form method="POST">
+        {% csrf_token %} {{ form.as_p }}
+        <div>
+            <p>
+                <button type="submit">Change booking</button>
+            </p>
+        </div>
+    </form>
 </body>
 
 </html>
