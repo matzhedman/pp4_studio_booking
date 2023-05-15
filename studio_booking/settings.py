@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['studio-booking-se.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-matzhedman-pp4-studio-bo-jqh4r956i8.us2.codeanyapp.com']
 
 
 # Application definition
